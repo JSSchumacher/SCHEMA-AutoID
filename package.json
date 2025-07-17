@@ -1,0 +1,9 @@
+{
+    "name": "schema-autoid",
+    "version": "0.0.0",
+    "description": "Web interface to automaticlly assign SCHEMA IDs to files",
+    "author": {
+    "name": "Joshua Schumacher",
+    "email": "contact@joshuaschumacher.com",
+    "url": "https://www.joshuaschumacher.com" }
+}

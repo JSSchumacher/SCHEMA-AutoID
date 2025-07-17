@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SCHEMA Auto-ID Generator</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+  <div class="max-w-xl w-full p-6 bg-white rounded-2xl shadow-xl space-y-6">
+    <h2 class="text-2xl font-bold text-gray-800">SCHEMA Auto-ID Generator</h2>
+
+    <div class="grid grid-cols-2 gap-4">
+      <div>
+        <label class="block text-sm font-medium text-gray-600">Security Clearance</label>
+        <input id="security-clearance" type="text" value="0" class="w-full mt-1 p-2 border rounded-lg" />
+      </div>
+      <div>
+        <label class="block text-sm font-medium text-gray-600">Item Type</label>
+        <input id="item-type" type="text" value="1" class="w-full mt-1 p-2 border rounded-lg" />
+      </div>
+      <div class="col-span-2">
+        <label class="block text-sm font-medium text-gray-600">Date</label>
+        <input id="date" type="text" value="20250717" class="w-full mt-1 p-2 border rounded-lg" />
+      </div>
+      <div>
+        <label class="block text-sm font-medium text-gray-600">Organization</label>
+        <input id="organization" type="text" value="Schumacher" class="w-full mt-1 p-2 border rounded-lg" />
+      </div>
+      <div>
+        <label class="block text-sm font-medium text-gray-600">Sub-organization</label>
+        <input id="sub-organization" type="text" value="Personal" class="w-full mt-1 p-2 border rounded-lg" />
+      </div>
+      <div class="col-span-2">
+        <label class="block text-sm font-medium text-gray-600">System Tag</label>
+        <input id="tag" type="text" value="SCHEMADF" class="w-full mt-1 p-2 border rounded-lg" />
+      </div>
+    </div>
+
+    <div>
+      <label class="block text-sm font-medium text-gray-600 mb-1">Generated SCHEMA ID</label>
+      <div id="output" class="p-3 bg-gray-100 rounded-lg font-mono text-sm text-gray-800">–</div>
+    </div>
+
+    <div class="flex justify-end space-x-2">
+      <button onclick="generateID()" class="px-4 py-2 bg-blue-600 text-white rounded-xl hover:bg-blue-700">Generate</button>
+      <button onclick="copyToClipboard()" class="px-4 py-2 bg-gray-300 text-gray-800 rounded-xl hover:bg-gray-400">Copy</button>
+    </div>
+  </div>
+
+  <script>
+    function generateID() {
+      const major = document.getElementById("security-clearance").value;
+      const minor = document.getElementById("item-type").value;
+      const date = document.getElementById("date").value;
+      const owner = document.getElementById("organization").value;
+      const domain = document.getElementById("sub-organization").value;
+      const tag = document.getElementById("tag").value;
+
+      const id = `${major}-${minor}-${date}-${owner}.${domain}-${tag}`;
+      document.getElementById("output").innerText = id;
+    }
+
+    function copyToClipboard() {
+      const text = document.getElementById("output").innerText;
+      if (text !== '–') {
+        navigator.clipboard.writeText(text);
+      }
+    }
+  </script>
+</body>
+</html>
