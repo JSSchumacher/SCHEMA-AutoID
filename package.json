@@ -1,6 +1,6 @@
 {
     "name": "schema-autoid",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "description": "Web interface to automaticlly assign SCHEMA IDs to files",
     "author": {
     "name": "Joshua Schumacher",
