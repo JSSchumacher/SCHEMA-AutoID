@@ -5,6 +5,36 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+# [v0.0.3.0007-2025.07.21-beta] - 2025-07-21
+## Notes: Clean up and fix for the GitHub Pages
+
+### Added
+
+- Add "sites" path in .github/workflows/static.yml
+
+### Changed
+
+- Change "docs" back to "site"
+
+### Removed
+
+- CNAME extra
+
+# [v0.0.3.0006-2025.07.21-beta] - 2025-07-21
+## Notes: Changed to GitHub Actions
+
+### Added
+
+- GitHub actions for site hosting
+
+### Changed
+
+- Nothing
+
+### Removed
+
+- Nothing
+
 # [v0.0.3.0005-2025.07.21-beta] - 2025-07-21
 ## Notes: Forgot to update things
 
@@ -105,7 +135,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 [Github Page]: https://github.com/JSSchumacher/SCHEMA-AutoID 
-[v0.0.3.0005-2025.07.21-beta]: https://www.joshuaschumacher.com/dev/work-in-progress
+[v0.0.3.0007-2025.07.21-beta]: https://www.joshuaschumacher.com/dev/work-in-progress
+[v0.0.3.0006-2025.07.21-beta]: https://github.com/JSSchumacher/SCHEMA-AutoID/commit/5f1ff7dc9e04a56521ea5813e73d9a6b5d0dea31
+[v0.0.3.0005-2025.07.21-beta]: https://github.com/JSSchumacher/SCHEMA-AutoID/commit/44a497ff4ecfac5a665595b211522203b712906e
 [v0.0.3.0004-2025.07.21-beta]: https://github.com/JSSchumacher/SCHEMA-AutoID/commit/212c6b613e2d53664d99a869fded6643b29762a3
 [v0.0.3.0003-2025.07.21-beta]: https://github.com/JSSchumacher/SCHEMA-AutoID/commit/4b33637281337b0928864e33a13e348e5d1acc77
 [v0.0.2.0002-2025.07.17-beta]: https://github.com/JSSchumacher/SCHEMA-AutoID/commit/8e99a7c1cfdab345f7537db334c872ad71252dfc
