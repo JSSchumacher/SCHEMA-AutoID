@@ -15,9 +15,6 @@ SCHEMA AutoID
 ### Description
 Web interface to automaticlly assign SCHEMA IDs to files.
 
-### Release Format Guide
-Since this encompasses both SCHEMA AutoID itself and its corresponding GitHub repository information, I will be updating the version format from 0.0.0-2000-01-01-stage to 0.0.0.0000-2000-01-01-stage. This adjustment will allow a clear distinction between the version of SCHEMA AutoID and the version of its GitHub repository. For now, the GitHub version identifier will remain separate and will continue to increment independently of the SCHEMA AutoID core version.
-
 ## What Inspired The Project
 Needed an easier way to automaticlly ID files. And also keep everything standarized for other's use.
 
@@ -32,4 +29,4 @@ SCHEMA (Schumacher Content Hierarchical Encoding & Management Architecture) is a
   <img width="300" src="https://raw.githubusercontent.com/JSSchumacher/JSS-Embeds/main/Images/Xeon/Transparent/Word/XEON%20Outline.png" />
 </p>
 
-##### Written By [Xeon](https://github.com/JSSchumacher) <br> Licensed under the [GNU Affero General Public License v3.0](https://github.com/JSSchumacher/XJSS-DFiles/blob/main/LICENSE) <br> Version 10.01.22.0002
+##### Written By [Xeon](https://github.com/JSSchumacher) <br> Licensed under the [CC-BY-SA-4.0](https://github.com/JSSchumacher/SCHEMA-AutoID/blob/main/LICENSE) <br> Version v0.0.4.0008-2025.07.29-beta

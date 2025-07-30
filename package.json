@@ -1,9 +1,14 @@
 {
     "name": "schema-autoid",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "Web interface to automaticlly assign SCHEMA IDs to files",
     "author": {
-    "name": "Joshua Schumacher",
-    "email": "contact@joshuaschumacher.com",
-    "url": "https://www.joshuaschumacher.com" }
+        "name": "Joshua Schumacher",
+        "email": "contact@joshuaschumacher.com",
+        "url": "https://www.joshuaschumacher.com"
+    },
+    "dependencies": {
+        "@tailwindcss/vite": "^4.1.11",
+        "tailwindcss": "^4.1.11"
+    }
 }
