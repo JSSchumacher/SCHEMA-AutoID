@@ -5,6 +5,22 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+# [v0.0.5.0008-2025.08.12-beta] - 2025-08-12
+## Notes: Add 5 - Protocol & 6 - Person to Item type 
+
+### Added
+
+- 5 - Protocol to "Item Type"
+- 6 - Person to "Item Type"
+
+### Changed
+
+- Nothing
+
+### Removed
+
+- Nothing
+
 # [v0.0.4.0008-2025.07.29-beta] - 2025-07-29
 ## Notes: Trying to get the website to use it's own CSS instead of the web-based one (plus SCHEMA standardization)
 
@@ -153,7 +169,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 [Github Page]: https://github.com/JSSchumacher/SCHEMA-AutoID 
-[v0.0.4.0008-2025.07.29-beta]: https://www.joshuaschumacher.com/dev/work-in-progress 
+[v0.0.5.0008-2025.08.12-beta]: https://www.joshuaschumacher.com/dev/work-in-progress
+[v0.0.4.0008-2025.07.29-beta]: https://github.com/JSSchumacher/SCHEMA-AutoID/commit/88c7b660560d447b6688c69ca75a08c96ba9ab4c
 [v0.0.3.0007-2025.07.21-beta]: https://github.com/JSSchumacher/SCHEMA-AutoID/commit/8f5cc2343c6e6f31c9505d8e8f03292781ce1ce3
 [v0.0.3.0006-2025.07.21-beta]: https://github.com/JSSchumacher/SCHEMA-AutoID/commit/5f1ff7dc9e04a56521ea5813e73d9a6b5d0dea31
 [v0.0.3.0005-2025.07.21-beta]: https://github.com/JSSchumacher/SCHEMA-AutoID/commit/44a497ff4ecfac5a665595b211522203b712906e
