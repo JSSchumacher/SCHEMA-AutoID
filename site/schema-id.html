@@ -28,6 +28,7 @@
       <div>
         <label class="block text-sm font-medium text-gray-300">Item Type</label>
         <select id="item-type" class="w-full mt-1 p-2 border border-gray-700 bg-gray-700 text-white rounded-lg">
+          <option value="7">7 - Framework</option>
           <option value="6">6 - Person</option>
           <option value="5">5 - Protocol</option>
           <option value="4">4 - Software</option>
@@ -84,18 +85,40 @@
     <div id="lookup-result" class="text-sm text-gray-300 mt-2 whitespace-pre-line"></div>
   </div>
 
-  <footer class="text-gray-500 text-xs text-center mt-6">
-    <p>SCHEMA ID Format: <code
-        class="text-gray-400">[SecurityClearance]-[ItemType]-[YYYYMMDD]-[Org].[SubOrg]-[Tag]</code></p>
+  <footer class="text-gray-500 text-xs text-center mt-6 space-y-1">
+    <p>SCHEMA ID Format: <code class="text-gray-400">
+      [SecurityClearance]-[ItemType]-[YYYYMMDD]-[Org].[SubOrg]-[Tag]
+    </code></p>
+    <p id="schema-version-display">SCHEMA Version: —</p>
+    <p id="schema-autoid-display">SCHEMA-AutoID: —</p>
   </footer>
 
   <script>
+  let schemaVersion = "";
+  let schemaAutoID = "";
+
+  // Load schema.json
+  fetch("schema.json")
+    .then(response => response.json())
+    .then(data => {
+      schemaVersion = data.schemaVersion;
+      schemaAutoID = data.schemaAutoID;
+
+      // Display at bottom of page
+      document.getElementById("schema-version-display").innerText = `SCHEMA Version: ${schemaVersion}`;
+      document.getElementById("schema-autoid-display").innerText = `SCHEMA-AutoID: ${schemaAutoID}`;
+
+      // Output to console
+      console.log(`SCHEMA Version: ${schemaVersion}`);
+      console.log(`SCHEMA-AutoID: ${schemaAutoID}`);
+    })
+    .catch(err => console.error("Error loading schema.json:", err));
+
     function formatDateToSchema(dateStr) {
       return dateStr.replace(/-/g, '');
     }
 
     function formatDateReadable(dateStr) {
-      // dateStr format: "YYYY-MM-DD"
       const parts = dateStr.split("-");
       const year = parts[0];
       const month = parts[1].padStart(2, "0");
@@ -145,7 +168,7 @@
       const id = document.getElementById("lookup-input").value.trim();
       const result = document.getElementById("lookup-result");
 
-      if (!id.includes('-') || !id.includes('-')) {
+      if (!id.includes('-')) {
         result.innerText = "Invalid SCHEMA ID format.";
         return;
       }
@@ -183,7 +206,8 @@
       };
 
       const itemMap = {
-        '6': 'Person',        
+        '7': 'Framework',
+        '6': 'Person',
         '5': 'Protocol',
         '4': 'Software',
         '3': 'Spreadsheet',
@@ -200,10 +224,10 @@
         `Date: ${readableDate}\n` +
         `Organization: ${org}\n` +
         `Sub-organization: ${domain || '—'}\n` +
-        `Tag: ${tag}`;
+        `Tag: ${tag}\n` +
+        `SCHEMA Version: ${schemaVersion || '—'}\n` +
+        `SCHEMA-AutoID: ${schemaAutoID || '—'}`;
     }
-
   </script>
 </body>
-
 </html>
