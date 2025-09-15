@@ -1,3 +1,18 @@
+# [v0.0.7.0008-2025.09.14-beta] - 2025-09-14
+## Notes: Added item type (8 - Machine)
+
+### Added
+
+- Item type 8 - Machine
+
+### Changed
+
+- Nothing
+
+### Removed
+
+- Nothing
+
 # [v0.0.6.0008-2025.09.03-beta] - 2025-09-03
 ## Notes: Add version type to page (SCHEMA and SCHEMA-AutoID) & Add item type (7 - Framework)
 
@@ -186,7 +201,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 [Github Page]: https://github.com/JSSchumacher/SCHEMA-AutoID 
-[v0.0.6.0008-2025.09.03-beta]: https://www.joshuaschumacher.com/dev/work-in-progress 
+[v0.0.7.0008-2025.09.14-beta]: https://www.joshuaschumacher.com/dev/work-in-progress 
+[v0.0.6.0008-2025.09.03-beta]: https://github.com/JSSchumacher/SCHEMA-AutoID/commit/2f2401c6a62de5769b199059cafb86eec02e0327
 [v0.0.5.0008-2025.08.12-beta]: https://github.com/JSSchumacher/SCHEMA-AutoID/commit/3382daf9f9619d821dc099aa53a6ff7d42395aef
 [v0.0.4.0008-2025.07.29-beta]: https://github.com/JSSchumacher/SCHEMA-AutoID/commit/88c7b660560d447b6688c69ca75a08c96ba9ab4c
 [v0.0.3.0007-2025.07.21-beta]: https://github.com/JSSchumacher/SCHEMA-AutoID/commit/8f5cc2343c6e6f31c9505d8e8f03292781ce1ce3
