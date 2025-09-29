@@ -1,4 +1,9 @@
 {
-  "schemaVersion": "v1.0.2.0005-2025.09.03-release",
-  "schemaAutoID": "v0.0.6.0008-2025.09.03-beta"
+<<<<<<< HEAD
+  "schemaVersion": "v1.0.5.0006-2025.09.28-release",
+  "schemaAutoID": "v1.0.5.0008-2025.09.20-release"
+=======
+  "schemaVersion": "v1.0.4.0006-2025.09.14-release",
+  "schemaAutoID": "v0.0.7.0008-2025.09.14-beta"
+>>>>>>> 39062bc8dd066c2aab1309ee4028a3d07a9777af
 }
